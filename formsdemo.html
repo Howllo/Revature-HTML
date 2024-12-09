@@ -7,11 +7,11 @@
         <h3 style="text-align: center;">Forms Demo</h3><hr>
         <form>
             <lable>Name: </lable>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2"><br>
             <label>Password: </label>
                 <input type="password" id="pass" name="pass" placeholder="Password" required minlength="8"><br>
             <label>Age: </label>
-                <input type="number" id="age" name="age" placeholder="Enter Age" required><br>
+                <input type="number" id="age" name="age" placeholder="Enter Age" required min="0" max="120"><br>
             
             <label>Gender: </label>
             <input type="radio" name="gender" value="Female"> Female
@@ -44,7 +44,7 @@
             <br>
 
             <label>Some Comments</label>
-                <textarea style="height: 80px; width: 200px;"></textarea>
+                <textarea style="height: 80px; width: 200px;" name="comment"></textarea>
                 
 
             <br>
